@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Vollkorn');
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  section {
+    width: 100%;
+    height: 100vh;
+  }
+  #one {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/tanks.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div {
+      position: absolute;
+      bottom: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        color: #fff;
+      }
+      i {
+        color: #fff;
+        font-size: 26px;
+        cursor: pointer;
+        }
+      }
+    }
+    #two {
+      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/battle.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
+      div {
+        h2 {
+          position: absolute;
+          top: 10%;
+          left: 10%;
+          font-size: 32px;
+        }
+        p {
+          font-size: 26px;
+          position: absolute;
+          top: 20%;
+          left: 10%;
+        }
+      }
+      ul {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        #heading {
+          p {
+            font-size: 22px;
+            text-decoration: underline;
+          }
+        }
+        li {
+          margin-bottom: 20px;
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    #three {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/bunker.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
+      color: #fff;
+      h2 {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 32px;
+      }
+      #GalleryWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        .galleryImageWrapper {
+          width: 500px;
+          height: 250px;
+          .galleryImage {
+            width: 500px;
+            height: 250px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    #four {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/tankbattle.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
+      color: #fff;
+      h2 {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 32px;
+      }
+      #subtitle {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        font-size: 26px;
+      }
+      h3 {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        font-size: 26px;
+      }
+      ul {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          a {
+            padding: 0;
+            margin-left: 10px;
+            text-decoration: underline;
+            color: #fff;
+            font-size: 18px;
+          }
+          p {
+            margin-left: 10px;
+            text-decoration: underline;
+            font-size: 18px;
+          }
+          .pHeading {
+            font-size: 22px;
+            text-decoration: none;
+          }
+        }
+        #linkHeading {
+          p {
+            font-size: 26px;
+          }
+        }
+      }
+      #smIcons {
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+          transition: 0.2s;
+          i {
+            font-size: 36px;
+          }
+        }
+        #discord:hover {
+          color: lighten(#7289DA, 15%);
+        }
+        #reddit:hover {
+          color: lighten(#FF4500, 15%);
+        }
+        #twitter:hover {
+          color: lighten(#00ACED, 15%);
+        }
+        #facebook:hover {
+          color: lighten(#4867AA, 15%);
+        }
+        #steam:hover {
+          color: lighten(#134B7E, 15%);
+        }
+        #youtube:hover {
+          color: lighten(#FF0000, 15%);
+        }
+      }
+    }
+    #five {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/planes.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        color: #fff;
+        font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
+        font-size: 32px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+          text-align: center;
+          margin-bottom: 10px;
+          input, 
+          textarea {
+            background-color: rgba(0,0,0,0.6);
+            outline: 0;
+            border: 0;
+            padding: 1em;
+            font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
+            color: #fff;
+            width: 300px;
+            &::placeholder {
+              color: #fff;
+            }
+          }
+          #inputBtn {
+            background-color: rgba(255,255,255,0.6);
+            padding: 1em;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+              background-color: rgba(255,255,255,0.9);
+            }
+          }
+        }
+      }
+    }
+  .alert {
+    display: none;
+    transition: 0.2s;
+    background-color:rgba(37, 196, 37, 0.438);
+    color: #fff;
+    font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    h3 {
+      padding: 1em;
+    }
+  }
+  .alert-success {
+    display: block;
+  }
+}
+
+#dotnav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
+
+.dotActive {
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999999;
+  background-color: rgba(0,0,0,0.5);
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  #modalImg {
+    width: 70%;
+    height: 60%;
+  }
+  #modalCloseBtn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      transition: 0.2s;
+      color: darken(#fff, 5%);
+    }
+  }
+}
+
+#spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background-color: rgba(32, 32, 32, 1);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.fadeOutSpinner {
+  animation: fadeOut 1s;
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background-image: linear-gradient(to left top, #e0ba68, #e2b964, #e3b860, #e5b75c, #e7b658);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

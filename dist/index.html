@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <title>BULLETGROUNDS</title>
+</head>
+
+<body id="body">
+  <div id="spinner">
+    <div class="lds-facebook">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div id="wrapper">
+    <section id="one">
+      <img src="img/logo.png" alt="Logo">
+      <div>
+        <p>Explore</p>
+        <i id="arrow" class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+    <section id="two">
+      <div>
+        <h2>About:</h2>
+        <p>Bulletgrounds is a World War 2 themed multiplayer arcade shooter that features vehicles, large maps,
+          destruction
+          and build elements.</p>
+      </div>
+      <ul>
+        <li id="heading">
+          <p>Featuring:</p>
+        </li>
+        <li>
+          <p>Totally realistically unrealistic weapons from WW2!</p>
+        </li>
+        <li>
+          <p>Even more unrealistic vehicles! Use tanks! Fly with planes! Fly with tanks! Or don't.<br> - You're a big
+            boy,
+            you do what you want.</p>
+        </li>
+        <li>
+          <p>Huge outdoor levels. Feel free to ignore objects and just drive into the sunset.<br> - Your team probably
+            won't
+            miss you anyway.</p>
+        </li>
+        <li>
+          <p>Destruction. Oh boy, smack those buildings, bunkers and walls down!</p>
+        </li>
+        <li>
+          <p>Buildmode: Oh boy, erect those buildings, bunkers and walls!</p>
+        </li>
+        <li>
+          <p>One gamemode that every game other game has done before.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="three">
+      <h2>Gallery:</h2>
+      <div id="GalleryWrapper">
+        <div class="galleryImageWrapper"><img class="galleryImage" src="img/battle-thumbnail.jpg" alt="Battle"></div>
+        <div class="galleryImageWrapper"><img class="galleryImage" src="img/tankbattle-thumbnail.jpg" alt="Tank Battle"></div>
+        <div class="galleryImageWrapper"><img class="galleryImage" src="img/planes-thumbnail.jpg" alt="Planes"></div>
+        <div class="galleryImageWrapper"><img class="galleryImage" src="img/soldiers-thumbnail.jpg" alt="Soldiers"></div>
+        <div class="galleryImageWrapper"><img class="galleryImage" src="img/bunker-thumbnail.jpg" alt="Bunker"></div>
+        <div class="galleryImageWrapper"><img class="galleryImage" src="img/tanks-thumbnail.jpg" alt="Tanks"></div>
+      </div>
+    </section>
+    <section id="four">
+      <h2>Contact:</h2>
+      <p id="subtitle">Here, you can contact the development team, talk about the game and contribute to the game's
+        development!</p>
+      <ul>
+        <li id="linkHeading">
+          <p>Links and Emails:</p>
+        </li>
+        <li>
+          <p class="pHeading">Forum:</p>
+          <a href="http://bulletgrounds.com/forum/index.php" target="_blank">http://bulletgrounds.com/forum/index.php</a>
+        </li>
+        <li>
+          <p class="pHeading">Press Kit:</p>
+          <a href="#" target="_blank">https://bulletgrounds.com/presskit</a>
+        </li>
+        <li>
+          <p class="pHeading">Business enquiries:</p>
+          <p>business@coldcoffeestudios.com</p>
+        </li>
+        <li>
+          <p class="pHeading">Press enquiries:</p>
+          <p>press@coldcoffeestudios.com</p>
+        </li>
+      </ul>
+      <h3>Social Media:</h3>
+      <div id="smIcons">
+        <a id="discord" href="https://discord.gg/p4b8J7m" target="_blank">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a id="reddit" href="https://www.reddit.com/r/BULLETGROUNDS/" target="_blank">
+          <i class="fab fa-reddit"></i>
+        </a>
+        <a id="twitter" href="https://twitter.com/BULLETGROUNDS" target="_blank">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a id="facebook" href="https://www.facebook.com/Bulletgrounds-172481213633985/" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a id="steam" href="https://store.steampowered.com/app/911380/BULLETGROUNDS/" target="_blank">
+          <i class="fab fa-steam"></i>
+        </a>
+        <a id="youtube" href="https://www.youtube.com/channel/UCykaa6FAQEVaJBSjPN-CAcA" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </section>
+    <section id="five">
+      <h2>Send us an Email!</h2>
+      <form class="contact__form" method="post" action="mail.php">
+        <div class="row">
+          <div class="col-12">
+            <div class="alert contact__msg" role="alert">
+              <h3>Your message has been sent!</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input name="name" type="text" placeholder="Name:" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <input name="email" type="email" placeholder="Email:" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <input name="subject" type="text" placeholder="Subject:" required>
+          </div>
+          <div class="col-12 form-group">
+            <textarea name="message" rows="4" placeholder="Message:" required></textarea>
+          </div>
+          <div class="col-12">
+            <input name="submit" id="inputBtn" type="submit" class="btn btn-success" value="Send Message">
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div id="dotnav">
+    <span id="span-1" class="dot" data-dot="1"></span>
+    <span id="span-2" class="dot" data-dot="2"></span>
+    <span id="span-3" class="dot" data-dot="3"></span>
+    <span id="span-4" class="dot" data-dot="4"></span>
+    <span id="span-5" class="dot" data-dot="5"></span>
+  </div>
+  <div id="modal">
+    <i id="modalCloseBtn" class="fa-2x fas fa-times-circle"></i>
+    <img id="modalImg" src="img/logo.png" alt="Image">
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/onepage-scroll.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <script src="mail.js"></script>
+</body>
+
+</html>

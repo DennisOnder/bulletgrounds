@@ -1,0 +1,22 @@
+{
+  "name": "bulletgrounds",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "scripts": {
+    "dev-dependencies": "npm install -D node-sass babel-cli babel-preset-es2015 concurrently",
+    "dev": "concurrently \"node-sass -w scss/ -o dist/css --recursive\" \"babel es6/es6.js --watch --out-file dist/js/main.js\""
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "Dennis Onder",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "node-sass": "^4.9.4"
+  }
+}
