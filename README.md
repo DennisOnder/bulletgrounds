@@ -6,8 +6,6 @@
 
 > Prerequisites:
 
-* Visual Studio Code
-
 * Node
 
 ` npm install - Installs all the necessary dependencies. `
