@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One|Vollkorn');
+@import 'responsive';
 
 body, html {
   padding: 0;
@@ -146,13 +147,13 @@ body, html {
       }
       h3 {
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 10%;
         font-size: 26px;
       }
       ul {
         position: absolute;
-        top: 40%;
+        top: 43%;
         left: 10%;
         margin: 0;
         padding: 0;
@@ -186,11 +187,11 @@ body, html {
       }
       #smIcons {
         position: absolute;
-        top: 28%;
+        top: 33%;
         left: 10%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        grid-gap: 15px;
         a {
           text-decoration: none;
           color: #fff;

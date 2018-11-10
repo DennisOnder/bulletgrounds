@@ -23,3 +23,7 @@ $('#span-3').click(function() {
 $('#span-4').click(function() {
   $('#wrapper').moveTo(4);
 });
+
+$('#span-5').click(function() {
+  $('#wrapper').moveTo(5);
+});

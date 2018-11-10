@@ -1,4 +1,186 @@
 @import url("https://fonts.googleapis.com/css?family=Patua+One|Vollkorn");
+@media (max-width: 1650px) {
+  #GalleryWrapper {
+    grid-template-columns: 1fr 1fr !important;
+    grid-gap: 3px !important; }
+    #GalleryWrapper .galleryImageWrapper {
+      width: 300px !important;
+      height: 150px !important; }
+      #GalleryWrapper .galleryImageWrapper .galleryImage {
+        width: 300px !important;
+        height: 150px !important; } }
+
+@media (max-width: 932px) {
+  #one img {
+    width: 450px !important; } }
+
+@media (max-width: 850px) {
+  #two div h2 {
+    top: 5% !important;
+    left: 5% !important;
+    font-size: 22px !important; }
+  #two div p {
+    top: 10% !important;
+    left: 5% !important;
+    font-size: 18px !important;
+    margin-right: 5%; }
+  #two ul {
+    top: 30% !important;
+    left: 5% !important; }
+    #two ul #heading p {
+      font-size: 18px !important; }
+    #two ul li {
+      margin-bottom: 5px !important;
+      margin-right: 6%; }
+      #two ul li p {
+        font-size: 16px !important; }
+  #three h2 {
+    top: 5% !important;
+    left: 5% !important;
+    font-size: 22px !important; }
+  #four h2 {
+    top: 5% !important;
+    left: 5% !important;
+    font-size: 22px !important; }
+  #four #subtitle {
+    top: 10% !important;
+    left: 5% !important;
+    font-size: 20px !important;
+    margin-right: 5%; }
+  #four h3 {
+    top: 20% !important;
+    left: 5% !important;
+    font-size: 18px !important; }
+  #four ul {
+    top: 37% !important;
+    left: 5% !important; }
+    #four ul li a {
+      margin-left: 5px !important;
+      font-size: 16px !important;
+      margin-right: 6%; }
+    #four ul li p {
+      margin: 0 !important;
+      padding: 0 !important;
+      margin-left: 5px !important;
+      font-size: 16px !important; }
+    #four ul li .pHeading {
+      font-size: 18px !important; }
+    #four ul #linkHeading p {
+      font-size: 22px !important; }
+  #four #smIcons {
+    top: 25% !important;
+    left: 5% !important;
+    grid-gap: 5px !important; }
+    #four #smIcons a i {
+      font-size: 26px !important; } }
+
+@media (max-width: 700px) {
+  #two div h2 {
+    top: 5% !important;
+    margin-top: 0 !important; }
+  #two div p {
+    top: 10% !important;
+    margin-top: 0 !important; }
+  #three h2 {
+    top: 5% !important;
+    margin-top: 0 !important; }
+  #three #GalleryWrapper .galleryImageWrapper {
+    width: 200px !important;
+    height: 100px !important; }
+    #three #GalleryWrapper .galleryImageWrapper img {
+      width: 200px !important;
+      height: 100px !important; }
+  #four h2 {
+    top: 5% !important;
+    margin-top: 0 !important; }
+  #four p {
+    top: 10% !important;
+    margin-top: 0 !important; }
+  #four h3 {
+    top: 22% !important; }
+  #four #smIcons {
+    top: 27% !important; } }
+
+@media (max-width: 486px) {
+  #two div h2 {
+    top: 0 !important;
+    margin-top: 10px !important; }
+  #two div p {
+    top: 40px !important;
+    margin-top: 0 !important; }
+  #two ul {
+    top: 20% !important; }
+    #two ul li p {
+      margin: 5px 5% 5px 0 !important; }
+  #three h2 {
+    top: 0 !important;
+    margin-top: 10px !important; }
+  #three #GalleryWrapper {
+    grid-template-columns: 1fr !important;
+    grid-gap: 2px !important; }
+    #three #GalleryWrapper .galleryImageWrapper {
+      width: 150px !important;
+      height: 75px !important; }
+      #three #GalleryWrapper .galleryImageWrapper img {
+        width: 150px !important;
+        height: 75px !important; }
+  #four h2 {
+    top: 0 !important;
+    margin-top: 10px !important; }
+  #four #subtitle {
+    top: 40px !important;
+    margin-top: 0 !important; }
+  #four ul {
+    margin-top: 10em !important;
+    position: static !important; }
+    #four ul #linkHeading p {
+      font-size: 20px !important; }
+    #four ul li {
+      flex-direction: column !important; }
+      #four ul li p, #four ul li a {
+        font-size: 14px !important; }
+  #four h3 {
+    position: static !important;
+    margin-bottom: 10px !important; }
+  #four #smIcons {
+    position: static !important;
+    grid-gap: 15px !important; }
+  #five h2 {
+    font-size: 22px !important; }
+  #five input {
+    width: 200px !important; }
+  #five textarea {
+    width: 200px !important; } }
+
+@media (max-width: 400px) {
+  #two div p {
+    font-size: 16px !important; }
+  #two ul {
+    top: 25% !important; }
+    #two ul li p {
+      font-size: 14px !important; }
+  #dotnav {
+    right: 1% !important; }
+    #dotnav span {
+      width: 7px !important;
+      height: 7px !important;
+      margin-bottom: 3px !important;
+      border: 2px solid #fff !important; }
+  #GalleryWrapper .galleryImageWrapper {
+    width: 200px !important;
+    height: 100px !important; }
+    #GalleryWrapper .galleryImageWrapper .galleryImage {
+      width: 200px !important;
+      height: 100px !important; } }
+
+@media (max-width: 460px) {
+  #one img {
+    width: 300px !important; } }
+
+@media (max-width: 360px) {
+  #one img {
+    width: 250px !important; } }
+
 body, html {
   padding: 0;
   margin: 0;
@@ -121,12 +303,12 @@ body, html {
       font-size: 26px; }
     #wrapper #four h3 {
       position: absolute;
-      top: 20%;
+      top: 25%;
       left: 10%;
       font-size: 26px; }
     #wrapper #four ul {
       position: absolute;
-      top: 40%;
+      top: 43%;
       left: 10%;
       margin: 0;
       padding: 0;
@@ -152,11 +334,11 @@ body, html {
         font-size: 26px; }
     #wrapper #four #smIcons {
       position: absolute;
-      top: 28%;
+      top: 33%;
       left: 10%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px; }
+      grid-gap: 15px; }
       #wrapper #four #smIcons a {
         text-decoration: none;
         color: #fff;

@@ -29,16 +29,18 @@ for (let i = 0; i < images.length; i++) {
 }
 
 const openModal = (source) => {
-  const replaced = source.replace('-thumbnail', '');
-  const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modalImg');
-  modalImg.setAttribute('src', replaced);
-  modal.style.display = 'flex';
-  modal.addEventListener('click', (e) => {
-    if(e.target == modalImg) {
-      return;
-    } else {
-      modal.style.display = 'none';
-    }
-  })
+  if(window.innerWidth >= 1280) {
+    const replaced = source.replace('-thumbnail', '');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    modalImg.setAttribute('src', replaced);
+    modal.style.display = 'flex';
+    modal.addEventListener('click', (e) => {
+      if(e.target == modalImg) {
+        return;
+      } else {
+        modal.style.display = 'none';
+      }
+    })
+  }
 };

@@ -31,16 +31,18 @@ for (var i = 0; i < images.length; i++) {
 }
 
 var openModal = function openModal(source) {
-  var replaced = source.replace('-thumbnail', '');
-  var modal = document.getElementById('modal');
-  var modalImg = document.getElementById('modalImg');
-  modalImg.setAttribute('src', replaced);
-  modal.style.display = 'flex';
-  modal.addEventListener('click', function (e) {
-    if (e.target == modalImg) {
-      return;
-    } else {
-      modal.style.display = 'none';
-    }
-  });
+  if (window.innerWidth >= 1280) {
+    var replaced = source.replace('-thumbnail', '');
+    var modal = document.getElementById('modal');
+    var modalImg = document.getElementById('modalImg');
+    modalImg.setAttribute('src', replaced);
+    modal.style.display = 'flex';
+    modal.addEventListener('click', function (e) {
+      if (e.target == modalImg) {
+        return;
+      } else {
+        modal.style.display = 'none';
+      }
+    });
+  }
 };

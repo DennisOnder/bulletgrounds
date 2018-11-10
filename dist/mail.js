@@ -16,7 +16,7 @@
       message.fadeIn().addClass('alert-success');
       setTimeout(function () {
           message.fadeOut();
-      }, 2000);
+      }, 5000);
   });
   
 })(jQuery);
