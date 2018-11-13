@@ -116,6 +116,18 @@
 }
 
 @media (max-width: 700px) {
+  #one {
+    #homeSmIcons {
+      bottom: 30% !important;
+      i {
+        font-size: 32px !important;
+        margin: 0 5px !important; 
+      }
+    }
+    #arrowWrapper {
+      bottom: 10% !important;
+    }
+  }
   #two {
     div {
       h2 {

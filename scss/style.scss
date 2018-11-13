@@ -29,7 +29,22 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    div {
+    #homeSmIcons {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      bottom: 20%;
+      i {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 40px;
+        &:hover {
+          transition: 0.2s;
+          color: rgb(177, 177, 177);
+        }
+      }
+    }
+    #arrowWrapper {
       position: absolute;
       bottom: 5%;
       display: flex;

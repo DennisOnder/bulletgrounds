@@ -75,6 +75,13 @@
       font-size: 26px !important; } }
 
 @media (max-width: 700px) {
+  #one #homeSmIcons {
+    bottom: 30% !important; }
+    #one #homeSmIcons i {
+      font-size: 32px !important;
+      margin: 0 5px !important; }
+  #one #arrowWrapper {
+    bottom: 10% !important; }
   #two div h2 {
     top: 5% !important;
     margin-top: 0 !important; }
@@ -207,18 +214,30 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    #wrapper #one div {
+    #wrapper #one #homeSmIcons {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      bottom: 20%; }
+      #wrapper #one #homeSmIcons i {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 40px; }
+        #wrapper #one #homeSmIcons i:hover {
+          transition: 0.2s;
+          color: #b1b1b1; }
+    #wrapper #one #arrowWrapper {
       position: absolute;
       bottom: 5%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      #wrapper #one div p {
+      #wrapper #one #arrowWrapper p {
         font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
         font-size: 22px;
         color: #fff; }
-      #wrapper #one div i {
+      #wrapper #one #arrowWrapper i {
         color: #fff;
         font-size: 26px;
         cursor: pointer; }
