@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Patua+One|Vollkorn");
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
 @media (max-width: 1650px) {
   #GalleryWrapper {
     grid-template-columns: 1fr 1fr !important;
@@ -151,13 +151,7 @@
     margin-bottom: 10px !important; }
   #four #smIcons {
     position: static !important;
-    grid-gap: 15px !important; }
-  #five h2 {
-    font-size: 22px !important; }
-  #five input {
-    width: 200px !important; }
-  #five textarea {
-    width: 200px !important; } }
+    grid-gap: 15px !important; } }
 
 @media (max-width: 400px) {
   #two div p {
@@ -188,13 +182,18 @@
   #one img {
     width: 250px !important; } }
 
+* {
+  font-family: 'Allerta Stencil', sans-serif; }
+
 body, html {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden; }
+  overflow: hidden;
+  background: url("../img/bulletgrounds_background.png");
+  background-size: 100% 100%; }
 
 #wrapper {
   display: flex;
@@ -207,9 +206,6 @@ body, html {
     width: 100%;
     height: 100vh; }
   #wrapper #one {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/tanks.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,7 +230,6 @@ body, html {
       justify-content: center;
       align-items: center; }
       #wrapper #one #arrowWrapper p {
-        font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
         font-size: 22px;
         color: #fff; }
       #wrapper #one #arrowWrapper i {
@@ -242,14 +237,10 @@ body, html {
         font-size: 26px;
         cursor: pointer; }
   #wrapper #two {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/battle.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-family: 'Vollkorn', Arial, Helvetica, sans-serif; }
+    justify-content: center; }
     #wrapper #two div h2 {
       position: absolute;
       top: 10%;
@@ -275,14 +266,10 @@ body, html {
         #wrapper #two ul li p {
           font-size: 18px; }
   #wrapper #three {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bunker.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
     color: #fff; }
     #wrapper #three h2 {
       position: absolute;
@@ -301,14 +288,10 @@ body, html {
           height: 250px;
           cursor: pointer; }
   #wrapper #four {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/tankbattle.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
     color: #fff; }
     #wrapper #four h2 {
       position: absolute;
@@ -377,53 +360,11 @@ body, html {
         color: #1d73c0; }
       #wrapper #four #smIcons #youtube:hover {
         color: #ff4d4d; }
-  #wrapper #five {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/planes.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    #wrapper #five h2 {
-      color: #fff;
-      font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
-      font-size: 32px; }
-    #wrapper #five form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      #wrapper #five form div {
-        text-align: center;
-        margin-bottom: 10px; }
-        #wrapper #five form div input,
-        #wrapper #five form div textarea {
-          background-color: rgba(0, 0, 0, 0.6);
-          outline: 0;
-          border: 0;
-          padding: 1em;
-          font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
-          color: #fff;
-          width: 300px; }
-          #wrapper #five form div input::placeholder,
-          #wrapper #five form div textarea::placeholder {
-            color: #fff; }
-        #wrapper #five form div #inputBtn {
-          background-color: rgba(255, 255, 255, 0.6);
-          padding: 1em;
-          color: #333;
-          font-weight: bold;
-          cursor: pointer;
-          transition: 0.2s; }
-          #wrapper #five form div #inputBtn:hover {
-            background-color: rgba(255, 255, 255, 0.9); }
   #wrapper .alert {
     display: none;
     transition: 0.2s;
     background-color: rgba(37, 196, 37, 0.438);
     color: #fff;
-    font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     width: 100%; }
@@ -463,9 +404,14 @@ body, html {
   top: 0;
   align-items: center;
   justify-content: center; }
-  #modal #modalImg {
-    width: 70%;
-    height: 60%; }
+  #modal #modalImg-wrapper {
+    display: flex;
+    width: 80%;
+    height: 70%; }
+    #modal #modalImg-wrapper #modalImg {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto; }
   #modal #modalCloseBtn {
     position: absolute;
     top: 25px;
