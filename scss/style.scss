@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Patua+One|Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
 @import 'responsive';
+
+* {
+  font-family: 'Allerta Stencil', sans-serif;
+}
 
 body, html {
   padding: 0;
@@ -8,6 +12,8 @@ body, html {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
+  background: url("../img/bulletgrounds_background.png");
+  background-size: 100% 100%;
 }
 
 #wrapper{
@@ -22,9 +28,6 @@ body, html {
     height: 100vh;
   }
   #one {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/tanks.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +55,6 @@ body, html {
       justify-content: center;
       align-items: center;
       p {
-        font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
         font-size: 22px;
         color: #fff;
       }
@@ -64,14 +66,10 @@ body, html {
       }
     }
     #two {
-      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/battle.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
       color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
       div {
         h2 {
           position: absolute;
@@ -108,14 +106,10 @@ body, html {
       }
     }
     #three {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/bunker.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
       color: #fff;
       h2 {
         position: absolute;
@@ -139,14 +133,10 @@ body, html {
       }
     }
     #four {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/tankbattle.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
       color: #fff;
       h2 {
         position: absolute;
@@ -236,60 +226,12 @@ body, html {
         }
       }
     }
-    #five {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/planes.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        color: #fff;
-        font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
-        font-size: 32px;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        div {
-          text-align: center;
-          margin-bottom: 10px;
-          input, 
-          textarea {
-            background-color: rgba(0,0,0,0.6);
-            outline: 0;
-            border: 0;
-            padding: 1em;
-            font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
-            color: #fff;
-            width: 300px;
-            &::placeholder {
-              color: #fff;
-            }
-          }
-          #inputBtn {
-            background-color: rgba(255,255,255,0.6);
-            padding: 1em;
-            color: #333;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.2s;
-            &:hover {
-              background-color: rgba(255,255,255,0.9);
-            }
-          }
-        }
-      }
-    }
+
   .alert {
     display: none;
     transition: 0.2s;
     background-color:rgba(37, 196, 37, 0.438);
     color: #fff;
-    font-family: 'Vollkorn', Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -336,9 +278,15 @@ body, html {
   top: 0;
   align-items: center;
   justify-content: center;
-  #modalImg {
-    width: 70%;
-    height: 60%;
+  #modalImg-wrapper {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    #modalImg {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
   }
   #modalCloseBtn {
     position: absolute;
